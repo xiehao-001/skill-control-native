@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Skill Control",
+    "description": "Wraps the filesystem skill provider with credential-, account- and workspace-based availability policy."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "@chatecnu-work/dsh-skill-control-native",
+  "version": "0.1.0-dev",
+  "description": "Wraps the filesystem skill provider with credential-, account- and workspace-based availability policy.",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MulanPSL-2.0 AND MIT",
+  "exports": {
+    ".": "./lib/index.js",
+    "./core": "./lib/core.js",
+    "./locale/en.json": "./locale/en.json",
+    "./locale/zh.json": "./locale/zh.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "MARKET.md",
+    "docs/**/*"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1 <0.3.0"
+  },
+  "keywords": [
+    "skills",
+    "policy",
+    "gating",
+    "sso"
+  ],
+  "peerDependencies": {
+    "@chatecnu-work/dsh-skill-settings-native": "0.1.0-dev",
+    "@deepseek-ai/cordis": "4.0.2",
+    "@deepseek-ai/dsh-credentials": "0.1.2-rc.1",
+    "@deepseek-ai/dsh-settings": "0.1.2-rc.1",
+    "@deepseek-ai/dsh-skill": "0.1.2-rc.1",
+    "@deepseek-ai/dsh-skill-filesystem": "0.1.2-rc.1"
+  }
+}
